@@ -7,6 +7,7 @@ public class SimpleNavigationTest {
     @Test
     public void test(Firefox firefox) {
         firefox
+                .waitSecondsOf(10)
                 .openGoogleSearchPage()
                     .AcceptCookies()
                     .printTitle()

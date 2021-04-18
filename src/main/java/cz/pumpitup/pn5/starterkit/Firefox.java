@@ -14,4 +14,13 @@ public interface Firefox extends WebApplication {
         return open(GoogleSearchPage.class);
     }
 
+    default Firefox waitSecondsOf(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return this;
+    }
+
 }
