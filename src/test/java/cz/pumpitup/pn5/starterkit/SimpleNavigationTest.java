@@ -9,9 +9,9 @@ public class SimpleNavigationTest {
         firefox
                 .waitSecondsOf(10)
                 .openGoogleSearchPage()
-                    .AcceptCookies()
+                    .acceptCookies()
                     .printTitle()
-                    .typeIntoSearchBox("pumpitup")
+                    .typeIntoSearchBox("pumpitup sro")
                     .submit()
                 .onSearchResultsPage()
                     .printTitle()

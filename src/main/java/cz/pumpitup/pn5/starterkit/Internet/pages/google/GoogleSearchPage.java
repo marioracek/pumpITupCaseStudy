@@ -8,6 +8,7 @@ import cz.pumpitup.pn5.core.Lookup;
 import cz.pumpitup.pn5.web.WebDriverAccessor;
 import cz.pumpitup.pn5.web.actions.Navigate;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
 
 @Navigate("https://www.google.com")
 @Wait(value = GoogleSearchPage.ACCEPT_BUTTON_XPATH, by = Lookup.XPATH)
@@ -16,7 +17,7 @@ public interface GoogleSearchPage extends WebDriverAccessor {
     String ACCEPT_BUTTON_XPATH = "//button[2]";
 
     @Click(value = ACCEPT_BUTTON_XPATH, by = Lookup.XPATH)
-    GoogleSearchPage AcceptCookies();
+    GoogleSearchPage acceptCookies();
 
     @ExtendedAction
     default GoogleSearchPage printTitle() {
