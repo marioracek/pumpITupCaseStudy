@@ -23,6 +23,7 @@ public interface PumpITupHomePage extends WebDriverAccessor {
         try {
             String expression = String.format("//*[contains(text(), \"%s\")]", text);
             getDriver().findElement(By.xpath(expression));
+            System.out.println("Found " + text + " on the page");
         } catch (Exception e) {
             throw new AssertionFailedError("The text \"" + text + "\" was not found on page");
         }

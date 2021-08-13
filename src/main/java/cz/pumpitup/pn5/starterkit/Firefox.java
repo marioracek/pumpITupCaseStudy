@@ -16,6 +16,7 @@ public interface Firefox extends WebApplication {
 
     default Firefox waitSecondsOf(int seconds) {
         try {
+            System.out.println("Waiting for " + seconds + " seconds");
             Thread.sleep(seconds * 1000L);
         } catch (InterruptedException e) {
             e.printStackTrace();
