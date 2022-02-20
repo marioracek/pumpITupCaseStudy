@@ -31,11 +31,6 @@
             <version>1.2.10</version>
         </dependency>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.5.1</version>
-        </dependency>
-        <dependency>
             <groupId>cz.pumpitup.pn5</groupId>
             <artifactId>core</artifactId>
             <version>0.5.8</version>
