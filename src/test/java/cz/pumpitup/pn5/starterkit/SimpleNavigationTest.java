@@ -10,14 +10,11 @@ public class SimpleNavigationTest {
 //                .waitSecondsOf(10)
                 .openGoogleSearchPage()
                     .acceptCookies()
-                    .printTitle()
                     .typeIntoSearchBox("pumpitup sro")
                     .submit()
                 .onSearchResultsPage()
-                    .printTitle()
                     .clickThroughFirstResult()
                 .onPumpITupHomePage()
-                    .printTitle()
                     .assertThatContainsText("DevOps");
     }
 }

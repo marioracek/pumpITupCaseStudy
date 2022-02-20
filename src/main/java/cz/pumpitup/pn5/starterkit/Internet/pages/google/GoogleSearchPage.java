@@ -18,12 +18,6 @@ public interface GoogleSearchPage extends WebAgentAccessor {
     @Click(value = ACCEPT_BUTTON_XPATH, by = Lookup.XPATH)
     GoogleSearchPage acceptCookies();
 
-    @ExtendedAction
-    default GoogleSearchPage printTitle() {
-        System.out.println(getAgent().getDriver().getTitle());
-        return this;
-    }
-
     @SetValue(value = "q", by = Lookup.NAME)
     GoogleSearchPage typeIntoSearchBox(String term);
 
