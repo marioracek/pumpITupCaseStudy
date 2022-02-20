@@ -8,6 +8,7 @@
 
     <logger name="io.netty" level="INFO" />
     <logger name="org.asynchttpclient.netty" level="INFO" />
+    <logger name="com.codeborne.selenide.impl" level="INFO" />
 
     <root level="TRACE">
         <appender-ref ref="STDOUT" />
