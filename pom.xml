@@ -13,6 +13,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <parameters>true</parameters>
+        <pumpo.version>0.5.11</pumpo.version>
     </properties>
 
     <dependencies>
@@ -34,12 +35,24 @@
         <dependency>
             <groupId>cz.pumpitup.pn5</groupId>
             <artifactId>core</artifactId>
-            <version>0.5.8</version>
+            <version>${pumpo.version}</version>
         </dependency>
         <dependency>
             <groupId>cz.pumpitup.pn5</groupId>
             <artifactId>web</artifactId>
-            <version>0.5.8</version>
+            <version>${pumpo.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cz.pumpitup.pn5</groupId>
+            <artifactId>http-remote-client-2</artifactId>
+            <version>${pumpo.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>cz.pumpitup.pn5</groupId>
+            <artifactId>http-remote-client-2</artifactId>
+            <version>0.5.11</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 

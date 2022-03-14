@@ -2,10 +2,10 @@ package cz.pumpitup.pn5.starterkit;
 
 import org.junit.jupiter.api.Test;
 
-public class SimpleNavigationTest {
+public class WebNavigationTest {
 
     @Test
-    public void test(Firefox firefox) {
+    public void searchPumpITupOnGoogle(Firefox firefox) {
         firefox
 //                .waitSecondsOf(10)
                 .openGoogleSearchPage()
