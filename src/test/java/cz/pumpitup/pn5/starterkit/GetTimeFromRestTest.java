@@ -1,8 +1,6 @@
 package cz.pumpitup.pn5.starterkit;
 
 import cz.pumpitup.pn5.core.LogLevel;
-import cz.pumpitup.pn5.core.webdriver.Capability;
-import cz.pumpitup.pn5.remote.http.HttpApplication;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

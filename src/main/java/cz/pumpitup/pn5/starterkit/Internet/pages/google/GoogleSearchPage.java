@@ -14,16 +14,17 @@ import org.openqa.selenium.By;
 public interface GoogleSearchPage extends WebAgentAccessor {
 
     String ACCEPT_BUTTON_XPATH = "//button[2]";
+    String QUERY = "q";
 
     @Click(value = ACCEPT_BUTTON_XPATH, by = Lookup.XPATH)
     GoogleSearchPage acceptCookies();
 
-    @SetValue(value = "q", by = Lookup.NAME)
+    @SetValue(value = QUERY, by = Lookup.NAME)
     GoogleSearchPage typeIntoSearchBox(String term);
 
     @ExtendedAction
     default GoogleSearchPage submit() {
-        getAgent().getDriver().findElement(By.name("q")).submit();
+        getAgent().getDriver().findElement(By.name(QUERY)).submit();
         return null;
     }
 

@@ -23,8 +23,7 @@ public interface Firefox extends WebApplication {
         try {
             System.out.println("Waiting for " + seconds + " seconds");
             Thread.sleep(seconds * 1000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        } catch (InterruptedException ignored) {
         }
         return this;
     }

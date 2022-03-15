@@ -15,7 +15,7 @@ public class GetTimeFromWebTest {
                 .selectLondon()
                 .getTime();
         firefox.getLogger().log(LogLevel.INFO, timeString);
-        Instant dateTimeFromWeb = MyHelpers.dateTimeFromTimeString(timeString);
+        Instant dateTimeFromWeb = MyHelpers.instantFromTimeString(timeString);
         firefox.getLogger().log(LogLevel.INFO, dateTimeFromWeb.toString());
     }
 }

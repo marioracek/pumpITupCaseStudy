@@ -16,7 +16,7 @@ public class CompareTimeTest {
                 .acceptCookies()
                 .selectLondon()
                 .getTime();
-        Instant dateTimeFromWeb = MyHelpers.dateTimeFromTimeString(timeString);
+        Instant dateTimeFromWeb = MyHelpers.instantFromTimeString(timeString);
         Instant dateTimeFromRest = restClient
                 .prepareRestRequest("http://worldtimeapi.org/api/timezone/Europe/Prague", "GET")
                 .sendAndGetResponse()
