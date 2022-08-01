@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 public class WebNavigationTest {
 
     @Test
-    public void searchPumpITupOnGoogle(Firefox firefox) {
+    public void searchPumpoDevAndCheck(Firefox firefox) {
         firefox
 //                .waitSecondsOf(10)
                 .openGoogleSearchPage()
