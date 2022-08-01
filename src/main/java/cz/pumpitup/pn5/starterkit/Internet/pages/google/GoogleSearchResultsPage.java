@@ -4,6 +4,7 @@ import cz.pumpitup.pn5.actions.Click;
 import cz.pumpitup.pn5.actions.Wait;
 import cz.pumpitup.pn5.core.Lookup;
 import cz.pumpitup.pn5.starterkit.Internet.pages.pumpitup.PumpITupHomePage;
+import cz.pumpitup.pn5.starterkit.Internet.pages.pumpodev.PumpoDevFivePage;
 import cz.pumpitup.pn5.web.WebAgentAccessor;
 
 @Wait(value = GoogleSearchResultsPage.RESULT_PAGE_SYMPTOM_XPATH, by = Lookup.XPATH)
@@ -17,4 +18,5 @@ public interface GoogleSearchResultsPage extends WebAgentAccessor {
 
     PumpITupHomePage onPumpITupHomePage();
 
+    PumpoDevFivePage onPumpoDevFivePage();
 }

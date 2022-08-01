@@ -10,11 +10,16 @@ public class WebNavigationTest {
 //                .waitSecondsOf(10)
                 .openGoogleSearchPage()
                     .acceptCookies()
-                    .typeIntoSearchBox("pumpitup sro")
+                    .typeIntoSearchBox("https://pumpo5.dev/")
                     .submit()
                 .onSearchResultsPage()
                     .clickThroughFirstResult()
-                .onPumpITupHomePage()
-                    .assertThatContainsText("DevOps");
+                .onPumpoDevFivePage()
+                    .clickOnGettingStartedButton()
+                    .assertThatContainsText("Usually test frameworks have the following architecture. All is based on the possibility to control browsers thanks to browser drivers.")
+                    .clickOnFarmConfiguration()
+                    .assertThatContainsText("Our currently preferred farm setup is using the open-source project Selenoid.")
+                    .clickOnCapabilitiesConfiguration()
+                    .assertElementContent("Capabilities available on the farm are listed in the configuration file config/browsers.json. Updating capabilities requires usually pulling new versions of images using the docker pull command and specifying the image to pull. After that it is also required to restart the selenoid component which can be done as docker restart selenoid.");
     }
 }
